@@ -1,0 +1,1 @@
+curl -v -X POST "https://my-property-extractor.azurewebsites.net/api/extract_property?code=dDp34vmiK0mn4qBq2yWkkz2rM1cLO9IMkLyPyGfQzLwEAzFu9-tJqQ==" -H "Content-Type: application/json" -d '{"sentence":"Looking for a 2-bedroom flat in Manchester for rent, max 1200 per month."}'
