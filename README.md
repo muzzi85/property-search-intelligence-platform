@@ -5,6 +5,8 @@ A cloud-native NLP API for extracting structured real-estate search intelligence
 
 The platform converts unstructured property search text into structured JSON metadata for downstream analytics, filtering, and recommendation systems.
 
+<img width="1536" height="1024" alt="1000039301" src="https://github.com/user-attachments/assets/60a38131-bf8e-4021-bb3d-81f4b86bc9ad" />
+
 Built using:
 
 `Python • Azure Functions • REST APIs • NLP • Azure Cloud`
