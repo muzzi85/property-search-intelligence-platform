@@ -189,28 +189,144 @@ Built as an applied NLP and cloud engineering project exploring:
 - real-estate NLP
 - scalable API engineering
 
-curl -v -X POST "https://my-property-extractor.azurewebsites.net/api/extract_property?code=dDp34vmiK0mn4qBq2yWkkz2rM1cLO9IMkLyPyGfQzLwEAzFu9-tJqQ==" -H "Content-Type: application/json" -d '{"sentence":"Looking for a 2-bedroom flat in Manchester for rent, max 1200 per month."}'
+---
 
+# ☁️ Azure Deployment & API Commands
 
-curs -v -X POST "https://my-property-extractor.azurewebsites.net/api/extract_property?code=dDp34vmiK0mn4qBq2yWkkz2rM1cLO9IMkLyPyGfQzLwEAzFu9-tJqQ==" -H
- "Content-Type: application/json" -d '{"sentence":"Looking for a 2-bedroom flat in Manchester for rent, max 1200 per month. -o output.json
+The platform was deployed using Azure Functions with a serverless cloud-native architecture.
 
- az functionapp create     --resource-group searchai     --consumption-plan-location eastus     --runtime python     --functions-version 4     --name my-property-extractor     --storage-account uisearchengine2025xyz     --os-type Linux     --runtime-version 3.10
+---
 
- func azure functionapp publish my-property-extractor
+# 🚀 Example API Request
 
-  az functionapp cors add     --name my-property-extractor     --resource-group searchai     --allowed-origins https://portal.azure.com
+```bash
+curl -v -X POST "https://my-property-extractor.azurewebsites.net/api/extract_property?code=dDp34vmiK0mn4qBq2yWkkz2rM1cLO9IMkLyPyGfQzLwEAzFu9-tJqQ==" \
+-H "Content-Type: application/json" \
+-d '{"sentence":"Looking for a 2-bedroom flat in Manchester for rent, max 1200 per month."}'
+```
 
-  az storage account show --name uisearchengine2025xyz --resource-group searchai
+---
 
-  az storage account create     --name uisearchengine2025xyz     --resource-group searchai     --location eastus     --sku Standard_LRS     --kind StorageV2     --subscription b2dc8e41-a4c4-4f97-a443-7446dfe9dce2
+# 💾 Save API Response to File
 
-az account show
+```bash
+curl -v -X POST "https://my-property-extractor.azurewebsites.net/api/extract_property?code=dDp34vmiK0mn4qBq2yWkkz2rM1cLO9IMkLyPyGfQzLwEAzFu9-tJqQ==" \
+-H "Content-Type: application/json" \
+-d '{"sentence":"Looking for a 2-bedroom flat in Manchester for rent, max 1200 per month."}' \
+-o output.json
+```
 
+---
+
+# ⚙️ Azure Function App Deployment
+
+## Create Azure Function App
+
+```bash
+az functionapp create \
+    --resource-group searchai \
+    --consumption-plan-location eastus \
+    --runtime python \
+    --functions-version 4 \
+    --name my-property-extractor \
+    --storage-account uisearchengine2025xyz \
+    --os-type Linux \
+    --runtime-version 3.10
+```
+
+---
+
+## Publish Function App
+
+```bash
+func azure functionapp publish my-property-extractor
+```
+
+---
+
+# 🌐 Configure CORS
+
+```bash
+az functionapp cors add \
+    --name my-property-extractor \
+    --resource-group searchai \
+    --allowed-origins https://portal.azure.com
+```
+
+---
+
+# 💾 Azure Storage Account Commands
+
+## Show Storage Account Details
+
+```bash
+az storage account show \
+    --name uisearchengine2025xyz \
+    --resource-group searchai
+```
+
+---
+
+## Create Storage Account
+
+```bash
+az storage account create \
+    --name uisearchengine2025xyz \
+    --resource-group searchai \
+    --location eastus \
+    --sku Standard_LRS \
+    --kind StorageV2 \
+    --subscription b2dc8e41-a4c4-4f97-a443-7446dfe9dce2
+```
+
+---
+
+# 🔐 Azure Authentication & Subscription Management
+
+## Login to Azure
+
+```bash
 az login --use-device-code
+```
 
-   az account set --subscription b2dc8e41-a4c4-4f97-a443-7446dfe9dce2
+---
 
-   az account list --output table
+## Show Current Azure Account
 
-   
+```bash
+az account show
+```
+
+---
+
+## List Azure Subscriptions
+
+```bash
+az account list --output table
+```
+
+---
+
+## Set Active Subscription
+
+```bash
+az account set \
+    --subscription b2dc8e41-a4c4-4f97-a443-7446dfe9dce2
+```
+
+---
+
+# 🧠 Cloud Engineering Concepts Demonstrated
+
+This project demonstrates practical enterprise cloud engineering concepts including:
+
+✅ Azure serverless deployment  
+✅ Function-as-a-Service (FaaS)  
+✅ REST API deployment  
+✅ Cloud-native NLP pipelines  
+✅ Azure CLI automation  
+✅ Infrastructure provisioning  
+✅ Storage account management  
+✅ API endpoint orchestration  
+✅ Serverless compute scaling  
+✅ Real-estate search intelligence APIs
