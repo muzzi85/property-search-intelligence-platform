@@ -202,7 +202,7 @@ The platform was deployed using Azure Functions with a serverless cloud-native a
 # 🚀 Example API Request
 
 ```bash
-curl -v -X POST "https://my-property-extractor.azurewebsites.net/api/extract_property?code=dDp34vmiK0mn4qBq2yWkkz2rM1cLO9IMkLyPyGfQzLwEAzFu9-tJqQ==" \
+curl -v -X POST "https://my-property-extractor.azurewebsites.net/api/extra xxxx \
 -H "Content-Type: application/json" \
 -d '{"sentence":"Looking for a 2-bedroom flat in Manchester for rent, max 1200 per month."}'
 ```
@@ -212,7 +212,7 @@ curl -v -X POST "https://my-property-extractor.azurewebsites.net/api/extract_pro
 # 💾 Save API Response to File
 
 ```bash
-curl -v -X POST "https://my-property-extractor.azurewebsites.net/api/extract_property?code=dDp34vmiK0mn4qBq2yWkkz2rM1cLO9IMkLyPyGfQzLwEAzFu9-tJqQ==" \
+curl -v -X POST =xxxx" \
 -H "Content-Type: application/json" \
 -d '{"sentence":"Looking for a 2-bedroom flat in Manchester for rent, max 1200 per month."}' \
 -o output.json
@@ -278,7 +278,7 @@ az storage account create \
     --location eastus \
     --sku Standard_LRS \
     --kind StorageV2 \
-    --subscription b2dc8e41-a4c4-4f97-a443-7446dfe9dce2
+    --subscription xxxxxx
 ```
 
 ---
@@ -313,7 +313,7 @@ az account list --output table
 
 ```bash
 az account set \
-    --subscription b2dc8e41-a4c4-4f97-a443-7446dfe9dce2
+    --subscription xxxxxx
 ```
 
 ---
