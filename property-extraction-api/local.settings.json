@@ -1,9 +1,9 @@
 {
   "IsEncrypted": false,
   "Values": {
-    "AzureWebJobsStorage": "DefaultEndpointsProtocol=https;AccountName=uisearchengine2025xyz;AccountKey=21kECTEc/X7HtuPRhy0MgXemxkL/LWw1vRxZdrwTEyMd66aEykSfPKS/GTqW2HNr+tw/cXDBA7wD+AStYwzZdg==;EndpointSuffix=core.windows.net",
+    "AzureWebJobsStorage": "xxxxx",
     "FUNCTIONS_WORKER_RUNTIME": "python",
-    "AZURE_OPENAI_API_KEY": "03RjECdtFKrtqzFLEVX8oLbcofYC8IiDSXDZ8a5f029qnQjjFxeNJQQJ99BJACmepeSXJ3w3AAABACOGFWdG",
+    "AZURE_OPENAI_API_KEY": "xxxxxx",
     "AZURE_OPENAI_ENDPOINT": "https://aboddaai.openai.azure.com/"
   }
 }
